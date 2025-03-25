@@ -9,7 +9,7 @@
  * @param points
  * @return int 
  */
-int count_combinations(int points);
+int count_combos(int points);
 
 /**
  * @brief Print a formatted table of all possible combinations that add up to
@@ -17,6 +17,6 @@ int count_combinations(int points);
  * 
  * @param points
  */
-void print_combinations(int points);
+void print_combos(int points);
 
 #endif /* __LAB_H__ */

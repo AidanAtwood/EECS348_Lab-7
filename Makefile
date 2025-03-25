@@ -1,7 +1,13 @@
 CC := gcc
+all: football.exe temperature.exe
 
-football.exe: # fill in files here
-	# fill in commands here
+football.exe: football_main.c football.c football.h
+	$(CC) -o football.exe football_main.c football.c
 
-temperature.exe: # fill in files here
-	# fill in commands here
+temperature.exe: temperature_main.c temperature.c temperature.h
+	$(CC) -o temperature.exe temperature_main.c temperature.c
+
+clean: 
+	rm -f *.o
+	rm -f football.exe
+	rm -f temperature.exe

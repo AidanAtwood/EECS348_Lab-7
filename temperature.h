@@ -9,7 +9,7 @@
  * @param celsius
  * @return float
  */
-float celsius_to_fahrenheit(float celsius);
+float C_to_F(float celsius);
 
 /**
  * @brief Convert temperature in Fahrenheit to Celsius
@@ -17,7 +17,7 @@ float celsius_to_fahrenheit(float celsius);
  * @param fahrenheit
  * @return float
  */
-float fahrenheit_to_celsius(float fahrenheit);
+float F_to_C(float fahrenheit);
 
 /**
  * @brief Convert temperature in Celsius to Kelvin
@@ -25,14 +25,45 @@ float fahrenheit_to_celsius(float fahrenheit);
  * @param celsius
  * @return float
  */
-float celsius_to_kelvin(float celsius);
+float C_to_K(float celsius);
 
 /**
  * @brief Convert temperature in Kelvin to Celsius
  * 
- * @param celsius
+ * @param kelvin
  * @return float
  */
-float kelvin_to_celsius(float celsius);
+float K_to_C(float kelvin);
 
+/**
+ * @brief Convert temperature in Fahrenheit to Kelvin
+ * 
+ * @param fahrenheit
+ * @return float
+ */
+ float F_to_K(float fahrenheit);
+
+ /**
+ * @brief Convert temperature in Kelvin to Fahrenheit
+ * 
+ * @param kelvin
+ * @return float
+ */
+ float K_to_F(float kelvin);
+
+ /**
+ * @brief Decide what category our temp falls into
+ * 
+ * @param celsius
+ * @return none
+ */
+ void display_temperature(float C);
+
+ /**
+ * @brief Clear the input buffer
+ *
+ * @param none
+ * @return none
+ */
+ void clear_input();
 #endif /* __REPORT_H__ */
